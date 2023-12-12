@@ -1,0 +1,452 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    /* background-image: url("three.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+div.nav1 {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+div.nav1 p a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+div.nav1 input{
+    padding: 16px 16px;
+}
+div.nav1 p a:hover{
+    background-color: gray;
+}
+#ham{
+    display: none;
+}
+.right{
+    float: right;
+}
+#notifications{
+    float: left;
+}
+@media screen and (max-width:576px){
+    #notifications{
+        float: none;
+    }
+    div.nav1 p, div.nav1 input{
+        display: none;
+        float: none;
+    }
+    body{
+        margin-top: 30px;
+    }
+    #ham{
+        display: block;
+    }
+}
+.filter{
+    width: 18%;
+    padding: 1%;
+    background-color: aliceblue;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+p.content1 a{
+    display: block;
+    width: 40%;
+    padding: 8% 0;
+    font-size: 25px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgba(134, 187, 195,0.5);
+    text-decoration: none;
+    color: black;
+}
+p.content1 a:hover{
+    font-size: 30px;
+}
+/* .content2 a{
+    display: inline-block;
+    width: 40%;
+    height: 280px;
+    overflow: hidden;
+    padding: 6px;
+    margin: 15px;
+    font-size: 20px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgba(134, 187, 195,0.5);
+    text-decoration: none;
+    color: black;
+} */
+.content3{
+    padding: 10px;
+    font-size: 20px;
+}
+#solution{
+    height: 270px;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+#solution2{
+    display: none;
+    width: 100%;
+    height:200px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+.approve{
+    margin-left: 20%;
+    font-size: large;
+}
+.cancel{
+    margin-right: 20%;
+    float: right;
+    font-size: large;
+}
+.box{
+    display: none;
+    width: 90%;
+    min-height: 200px;
+    margin-left: 4%;
+    padding: 3%;
+    border: 1px solid gray;
+    border-radius: 2% 0%;
+    box-shadow: -2px 2px 10px rgb(0,0,0);
+}
+.fullbutton{
+    font-size: .889rem;
+    line-height: 1.125;
+    border-radius: 2rem;
+    padding: 0.4375rem 1rem;
+    border-style: solid;
+    border-width: 0.0625rem;
+    color: #fff;
+    background-color: #21850f;
+    border-color: #21850f;
+    float: right;
+    margin-right: 3%;
+}
+.matter{
+    max-height: 78px;
+    overflow: hidden;
+}
+.dp{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.profile{
+    display: flex;
+    margin-bottom: 1%;
+}
+.pname{
+    margin-left: 2%;
+}
+/* post problem */
+.content {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  #solutionTextarea{
+    resize: none;
+    overflow-y: hidden;
+  }
+/* post problem */
+/* nav bar */
+.current-profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .change-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-upload {
+    text-align: center;
+  }
+  .dropdown-menu {
+    margin-top: 0;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profile-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-details {
+    flex-grow: 1;
+  }
+  
+  .profile-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .profile-email {
+    color: #888;
+  }
+  
+  .profiledropdown{
+      position: absolute;
+      left: -200px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  #profilepic:hover{
+    cursor: pointer;
+    filter: opacity(0.7);
+  }
+/* nav bar */
+/* datalist */
+/* #fieldOptions {
+  position: absolute;
+  max-height: 20em;
+  border: 0 none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#fieldOptions option {
+  font-size: 1em;
+  padding: 0.3em 1em;
+  background-color: #ccc;
+  cursor: pointer;
+} */
+
+/* option active styles */
+/* #fieldOptions option:hover,
+#fieldOptions option:focus {
+  color: #fff;
+  outline: 0 none;
+} */
+/* datalist */
+
+/* datalist2 */
+.fieldList {
+  position: absolute;
+  width: calc(100% - 109px); /* Adjusted width to account for borders */
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  z-index: 1;
+  /* display: none; */
+}
+
+
+/* Style the subField elements within fieldList */
+.subField {
+  padding: 8px;
+  cursor: pointer;
+  display: none;
+}
+.subField:hover{
+  background-color: #ccc;
+}
+/* datalist2 */
+
+/* Home Page */
+.homeHeader {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#mainHeading{
+  color: white;
+}
+
+
+#about {
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.step {
+  display: flex;
+  margin: 30px;
+}
+
+.step-icon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-content {
+  margin-left: 20px;
+}
+
+.signupButton {
+  display: inline-block;
+  padding: 13px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.signupButton:hover {
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+}
+
+.homeFooter {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+/* Home Page */
+
+/* FullProblemStu */
+.ProblemFooter{
+  display: inline;
+  float: right;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.svgImage{
+  margin-right: 3px;
+}
+.ProblemStatement{
+  margin-bottom: 60px;
+  display: none;
+}
+.TotalSolution{
+  display: none;
+  margin-bottom: 10px;
+}
+.SubSolution{
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+.proHeading{
+  text-align: center;
+}
+.solHeading{
+  text-align: center;
+}
+.solInputs{
+  border: none;
+  margin-bottom: 2px;
+}
+.solInputs:focus{
+  border-color: #f2f2f2;
+  outline: none;
+  box-shadow: none;
+}
+.AddSolution{
+  display: none;
+  margin-bottom: 20px;
+}
+
+.SolutionSubmit {
+  float: right;
+  padding: 7px 20px;
+  background-color: rgb(44 187 93);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.SolutionSubmit:hover {
+  background-color: rgb(29, 212, 93);
+  color: #fff;
+}
+.linkFileIcon{
+  vertical-align: baseline;
+  width: 24px;
+  margin-right: 3px;
+}
+.linkFile{
+  display: inline;
+  cursor: pointer;
+  /* width: 24px; */
+}
+.chooseFile{
+  /* display: none; */
+}
+.AllSolutions{
+  display: none;
+}
+.queId{
+  display: none;
+}
